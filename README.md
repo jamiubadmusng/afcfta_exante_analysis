@@ -84,7 +84,3 @@ This research uses Poisson Pseudo-Maximum Likelihood (PPML) estimations and stru
 - **Email**: jamiubadmus001@gmail.com
 - **Website**: https://sites.google.com/view/jamiu-olamilekan-badmus/
 
-# afcfta_exante_analysis
-Replication package for the EMJMD-EGEI dissertation on ex-ante evaluation of AfCFTA economic impacts
-
-
