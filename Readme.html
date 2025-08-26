@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AfCFTA Ex-ante Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>AfCFTA Ex-ante Analysis</h1>
+    
+    <p>Replication package for the EMJMD-EGEI dissertation titled <strong>An Ex-ante Evaluation of the Economic Impact of the African Continental Free Trade Area (AfCFTA) on ex-ante evaluation of AfCFTA economic impacts</strong> authored by <strong>Jamiu Olamilekan Badmus</strong> and supervised by <strong>Prof. Ruben Dewitte</strong> - Economist at the economic research team of ING and visiting professor at Ghent University, Belgium.</p>
+    
+    <h2>Overview</h2>
+    <p>This repository contains the code and documentation for the ex-ante evaluation of the African Continental Free Trade Area (AfCFTA) agreement's economic impacts. The replicator should expect the whole code to run for about 2 to 3 days.</p>
+    
+    <h2>Data Availability</h2>
+    <p>The data relied on in this dissertation can be found in the './input' folder of the repository. The data are donwloaded from the following sources:</p>
+    
+    <ol>
+        <li><strong>ITPD-E-R02 Trade Database</strong>
+            <ul>
+                <li><strong>Source</strong>: United States International Trade Commission (USITC)</li>
+                <li><strong>URL</strong>: <a href="https://www.usitc.gov/data/gravity/itpde.htm">https://www.usitc.gov/data/gravity/itpde.htm</a></li>
+                <li><strong>Coverage</strong>: 170 industries, 4 broad sectors, 265 countries, 1986-2019</li>
+                <li><strong>Citation</strong>:
+                    <ul>
+                        <li>Borchert, I., Larch, M., Shikher, S., and Yotov, Y. (2022), "The International Trade and Production Database for Estimation - Release 2 (ITPD-E-R02)," USITC Working Paper 202207A.</li>
+                        <li>Borchert, I., Larch, M., Shikher, S., and Yotov, Y. (2021), "The International Trade and Production Database for Estimation (ITPD-E)," International Economics, 166, 140166.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Dynamic Gravity Dataset (Version 2.1)</strong>
+            <ul>
+                <li><strong>Source</strong>: United States International Trade Commission (USITC)</li>
+                <li><strong>URL</strong>: <a href="https://www.usitc.gov/data/gravity/dgd.htm">https://www.usitc.gov/data/gravity/dgd.htm</a></li>
+                <li><strong>Citation</strong>: Gurevich, T. and Herman, P. (2018). The Dynamic Gravity Dataset: 1948-2016. USITC Working Paper 2018-02-A.</li>
+            </ul>
+        </li>
+        <li><strong>Structural Gravity Database</strong>
+            <ul>
+                <li><strong>Source</strong>: World Trade Organization</li>
+                <li><strong>URL</strong>: <a href="https://www.wto.org/english/res_e/reser_e/structural_gravity_e.htm">https://www.wto.org/english/res_e/reser_e/structural_gravity_e.htm</a></li>
+                <li><strong>Citation</strong>:
+                    <ul>
+                        <li>Larch, M., & Monteiro, J., Piermartini, R., and Yotov, Y. (2019). "On the Effects of GATT/WTO Membership on Trade: They are Positive and Large After All," WTO Staff Working Papers ERSD-2019-09, World Trade Organization (WTO), Economic Research and Statistics Division.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Tariff Data</strong>
+            <ul>
+                <li><strong>Source</strong>: World Integrated Trade Solution (WITS)</li>
+                <li><strong>URL</strong>: <a href="https://wits.worldbank.org/WITS/WITS/Restricted/Login.aspx">https://wits.worldbank.org/WITS/WITS/Restricted/Login.aspx</a></li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2>Computing environment</h2>
+    <p>This code was run on a x86_64-w64-mingw32 platform of a Windows 10 x64 (build 26100) computer.</p>
+    <p>The analysis is conducted in the R programming environment. R is free, open-source and available for download here: <a href="https://www.r-project.org/">https://www.r-project.org/</a>. The code has been tested against R version 4.5.1 (2025-06-13 ucrt).</p>
+    <p>Once R is successfully set up on your system, you will need to install a number of external R libraries. I have provided the code to install all the necessary R libraries in each of the R scripts.</p>
+    
+    <h2>Instructions to replicators</h2>
+    <p>The empirical data analysis takes place within the ./input, /code, and ./output directories respectively holding the external files, the code that operates on the files in the ./input directory, and the computational results.</p>
+    <p>Further files and directories refer to:</p>
+    <ul>
+        <li>The Readme files ./Readme.md, ./Readme.html, and ./Readme.docx are generated by ./Readme.Rmd. <strong>NOTE: It's fine if your write your Readme file in Word!</strong></li>
+        <li>The ./afcfta_milestone_timeline.png and ./tralac_2024.png files are pictures that show the time phase of AfCFTA agreement and the map of countries that has signed and/or ratified the agreement, respectively.</li>
+    </ul>
+    
+    <h2>Methodology</h2>
+    <p>This research uses Poisson Pseudo-Maximum Likelihood (PPML) estimations and structural gravity modeling to evaluate the trade and welfare effects of AfCFTA.</p>
+    
+    <h3>Key Tables:</h3>
+    <table>
+        <tr>
+            <th>Table</th>
+            <th>Description</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>Summary Statistics by Sector</td>
+            <td>output/tables/summary_statistics.tex</td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>Intra-AfCFTA Trade Effects (Overall)</td>
+            <td>output/tables/tab_afcfta.tex</td>
+        </tr>
+        <tr>
+            <td>4.2-4.9</td>
+            <td>REC-specific Trade Results</td>
+            <td>output/tables/tab_amu.tex through tab_sadc.tex</td>
+        </tr>
+        <tr>
+            <td>C.1</td>
+            <td>General Equilibrium Table (with Robustness Check)</td>
+            <td>output/tables/welfare_effects_table.tex</td>
+        </tr>
+        <tr>
+            <td>C.2</td>
+            <td>Robustness: Partial Equilibrium</td>
+            <td>output/tables/tab_afcfta_rob.tex</td>
+        </tr>
+    </table>
+    
+    <h3>Key Figures:</h3>
+    <table>
+        <tr>
+            <th>Figure</th>
+            <th>Description</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>Trade and Tariff Evolution</td>
+            <td>output/figures/intra_africa_trade_and_tariffs_combined.pdf</td>
+        </tr>
+        <tr>
+            <td>3.2-3.9</td>
+            <td>REC Trade Flow Patterns</td>
+            <td>output/figures/rec_trade_flows_amu.pdf through rec_trade_flows_sadc.pdf</td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>Overall AfCFTA Border Effects</td>
+            <td>output/figures/graph_afcfta_brdr.pdf</td>
+        </tr>
+        <tr>
+            <td>4.2</td>
+            <td>REC-specific Border Effects</td>
+            <td>output/figures/graph_amu_to_af.pdf through graph_af_to_amu.pdf, etc.</td>
+        </tr>
+        <tr>
+            <td>4.3</td>
+            <td>General Equilibrium (Welfare) Plots</td>
+            <td>output/figures/welfare_effects_with_row_geppml_agri.pdf though welfare_effects_with_row_geppml_struc.pdf</td>
+        </tr>
+    </table>
+    
+    <h2>Contact</h2>
+    <p><strong>Jamiu Olamilekan Badmus</strong></p>
+    <ul>
+        <li><strong>GitHub</strong>: <a href="https://github.com/jamiubadmusng">@jamiubadmusng</a></li>
+        <li><strong>Email</strong>: <a href="mailto:jamiubadmus001@gmail.com">jamiubadmus001@gmail.com</a></li>
+        <li><strong>Website</strong>: <a href="https://sites.google.com/view/jamiu-olamilekan-badmus/">https://sites.google.com/view/jamiu-olamilekan-badmus/</a></li>
+    </ul>
+</body>
+</html>
