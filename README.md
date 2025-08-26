@@ -1,4 +1,5 @@
-﻿# AfCFTA Ex-ante Analysis
+﻿
+ï»¿# AfCFTA Ex-ante Analysis
 
 Replication package for the EMJMD-EGEI dissertation titled **"An Ex-ante Evaluation of the Economic Impact of the African Continental Free Trade Area (AfCFTA) on ex-ante evaluation of AfCFTA economic impacts"** authored by **Jamiu Olamilekan Badmus** and supervised by **Prof. Ruben Dewitte** - Economist at the economic research team of ING and visiting professor at Ghent University, Belgium. 
 
@@ -82,3 +83,8 @@ This research uses Poisson Pseudo-Maximum Likelihood (PPML) estimations and stru
 - **GitHub**: [@jamiubadmusng](https://github.com/jamiubadmusng)
 - **Email**: jamiubadmus001@gmail.com
 - **Website**: https://sites.google.com/view/jamiu-olamilekan-badmus/
+
+# afcfta_exante_analysis
+Replication package for the EMJMD-EGEI dissertation on ex-ante evaluation of AfCFTA economic impacts
+
+
