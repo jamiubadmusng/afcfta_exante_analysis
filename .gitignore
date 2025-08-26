@@ -1,0 +1,33 @@
+# R specific
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.Renviron
+.Rprofile
+*.Rcheck/
+.Rproj
+
+# Large data files (if any)
+*.rda
+*.RData
+*.rds
+*.csv
+*.dta
+*.sav
+*.xlsx
+*.xls
+*.zip
+*.gz
+*.tar
+*.7z
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*~
+*.swp
+*.bak
