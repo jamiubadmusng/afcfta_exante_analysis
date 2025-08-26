@@ -1,10 +1,17 @@
-# R specific
-.Rproj.user
+﻿# Large data files
+input/intra_africa_tariff.csv
+*.csv
+*.rda
+*.RData
+*.rds
+*.zip
+
+# R specific files
 .Rhistory
 .RData
 .Ruserdata
-.Rapp.history
-.Renviron
-.Rprofile
-*.Rcheck/
-.Rproj
+*.Rproj.user/
+
+# OS specific files
+.DS_Store
+Thumbs.db
