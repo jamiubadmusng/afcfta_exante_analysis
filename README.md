@@ -1,5 +1,5 @@
 ﻿
-ï»¿# AfCFTA Ex-ante Analysis
+## AfCFTA Ex-ante Analysis
 
 Replication package for the EMJMD-EGEI dissertation titled **"An Ex-ante Evaluation of the Economic Impact of the African Continental Free Trade Area (AfCFTA) on ex-ante evaluation of AfCFTA economic impacts"** authored by **Jamiu Olamilekan Badmus** and supervised by **Prof. Ruben Dewitte** - Economist at the economic research team of ING and visiting professor at Ghent University, Belgium. 
 
