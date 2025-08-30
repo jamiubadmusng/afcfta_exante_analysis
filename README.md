@@ -60,11 +60,11 @@ This research uses Poisson Pseudo-Maximum Likelihood (PPML) estimations and stru
 
 | Table | Description | Location |
 |-------|-------------|----------|
-| 3.1 | Summary Statistics by Sector | output/tables/summary_statistics.tex |
 | 4.1 | Intra-AfCFTA Trade Effects (Overall) | output/tables/tab_afcfta.tex |
 | 4.2-4.9 | REC-specific Trade Results | output/tables/tab_amu.tex through tab_sadc.tex |
-| C.1 | General Equilibrium Table (with Robustness Check) | output/tables/welfare_effects_table.tex |
-| C.2 | Robustness: Partial Equilibrium | output/tables/tab_afcfta_rob.tex |
+| C.1 | Summary Statistics by Sector | output/tables/summary_statistics.tex |
+| C.2 | General Equilibrium Table (with Robustness Check) | output/tables/welfare_effects_table.tex |
+| C.3 | Robustness: Partial Equilibrium | output/tables/tab_afcfta_rob.tex |
 
 ### Key Figures:
 
@@ -74,7 +74,7 @@ This research uses Poisson Pseudo-Maximum Likelihood (PPML) estimations and stru
 | 3.2-3.9 | REC Trade Flow Patterns | output/figures/rec_trade_flows_amu.pdf through rec_trade_flows_sadc.pdf |
 | 4.1 | Overall AfCFTA Border Effects | output/figures/graph_afcfta_brdr.pdf |
 | 4.2 | REC-specific Border Effects | output/figures/graph_amu_to_af.pdf through graph_af_to_amu.pdf, etc. |
-| 4.3 | General Equilibrium (Welfare) Plots | output/figures/welfare_effects_with_row_geppml_agri.pdf though welfare_effects_with_row_geppml_struc.pdf |
+| 4.3-4.6 | General Equilibrium (Welfare) Plots | output/figures/welfare_effects_with_row_geppml_agri.pdf though welfare_effects_with_row_geppml_struc.pdf |
 
 
 ## Contact
